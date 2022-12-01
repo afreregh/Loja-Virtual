@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Pesquisar</title>
     <!-- Style -->
     <style>
       .light {
@@ -56,8 +57,6 @@
         width: 100%;
         margin-left: -20px;
       }
-
-      
 
       .wrapper{
         position: relative;
@@ -196,14 +195,24 @@
       }
 
       .content-area .container {
+
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
+        
       }
 
-      .title{
-        font-size: 1.4rem;
+      .title h1{
+        font-size: 22px;
+        color: var(--darkOne);
+        text-transform: capitalize;
+        line-height: 1.4;
+        margin-top: 50px;
+      }
+
+      .title h2{
+        font-size: 22px;
         color: var(--darkOne);
         text-transform: capitalize;
         line-height: 1.4;
@@ -217,9 +226,16 @@
         line-height: 2.3;
       }
 
-      .clothes{
-        width: 123%;
-        transform: translate(15%, 25px);
+      .subtitle{
+        font-size: 20px;
+        color: var(--darkOne);
+        text-transform: capitalize;
+        line-height: 1.4;
+        margin-left: 2px;
+        border-bottom: 1px solid var(--darkOne);
+        padding-bottom: 4px;
+        margin-top: 20px;
+        width: 300px;
       }
 
       .shape{
@@ -277,6 +293,46 @@
         left: 0;
         z-index: 100;
         animation: flow 1s 1 both;
+      }
+
+      .search{
+        display: flex;
+        flex-direction: row;
+      }
+      .border-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9rem 1.9rem;
+        background-color: var(--mainColor);
+        border-radius: 50px;
+        text-transform: capitalize;
+        transition: 0.3s;
+        color: #fff !important;
+        border-bottom-left-radius: 0px;
+        margin-right: 10px;
+      }
+      .search-input{
+        width: 600px;
+        height: 30px;
+        border: none;
+        margin: 5px;
+        outline: none;
+      }
+      .search-input::placeholder{
+        outline: none;
+        color: #2E2E2E;
+        font-weight: 500;
+        padding-left: 20px;
+      }
+      .barra{
+        margin-left: 10px;
+        border: 1px solid #fff;
+        height: 23px;
+      }
+      .icon{
+        margin-left: 10px;
+        font-size: 20px;
       }
 
       footer{
@@ -341,16 +397,27 @@
           background: none;
         }
         .content-area .container {
-          grid-template-columns: 1fr;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          align-items: center;
           justify-content: center;
-          grid-gap: 2rem;
         }
+
         .title {
           font-size: 1.1rem;
         }
         .text{
           font-size: 0.95rem;
           margin: 1.4rem 0 1.5rem;
+        }
+        .subtitle{
+          font-size: 25px;
+          color: var(--darkOne);
+          text-transform: capitalize;
+          line-height: 1.4;
+          margin-left: 2px;
+          border-bottom: 1px solid var(--darkOne);
+          padding-bottom: 4px;
         }
         .clothes {
           width: 100%;
@@ -389,6 +456,15 @@
         .text{
           margin: 1.1rem 0 1.5rem;
         }
+        .subtitle{
+          font-size: 25px;
+          color: var(--darkOne);
+          text-transform: capitalize;
+          line-height: 1.4;
+          margin-left: 2px;
+          border-bottom: 1px solid var(--darkOne);
+          padding-bottom: 4px;
+        }
         .shape{
           display: none;
         }
@@ -403,6 +479,7 @@
       }
 
     </style>
+
   </head>
   <body>
 
@@ -443,23 +520,24 @@
 
         <div class="content-area">
           <div class="container">
-            <div class="left">
+            <div>
               <div class="title">
-                <h1>Bem-vindo à</h1>
-                <h1>Loja Virtual</h1>
+                <h1>Bem - vindo à</h1>
+                <h2>Página de Busca</h2>
               </div>
+              <h2 class="subtitle">Sobre a Loja</h2>
               <p class="text">
-                Clique no link para conhecer os produtos e preços da loja. Também poderá procurar o produto em nossa <a href="Pesquisar Produtos.php">Página de busca.</a>
+                Pesquise abaixo os produtos que esta procurando!
               </p>
-              <div>
-                <a href="Loja.php" class="btn">saiba mais!</a>
-              </div>
-            </div>
-
-            <div class="right">
-              <img src="images/clothes.png" alt="Sacola de compras" class="clothes">
-            </div>
-
+              <form>
+                <div class="search">
+                  <div class="border-input">
+                    <input type="search" class="search-input" placeholder="Buscar Produtos ..."><div class="barra"></div>
+                    <i class="uil uil-search icon"></i>
+                  </div>
+                </div>
+              </form>
+            </div>  
           </div>
         </div>
 
@@ -470,6 +548,7 @@
       </div>
     </main>
      
+    
     <!-- Script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
@@ -531,6 +610,25 @@
       events();
 
     </script>
+
+    <script>
+      let count = 1;
+        document.getElementById("radio1").checked = true;
+
+        setInterval( function(){
+          nextImage();
+      }, 5000)
+
+      function nextImage(){
+        count++;
+        if(count>4){
+          count = 1;
+        }
+
+        document.getElementById("radio"+count).checked = true;
+
+      }
+  </script>
     <!-- Footer -->
     <footer>
       

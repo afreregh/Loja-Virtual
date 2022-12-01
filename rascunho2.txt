@@ -1,0 +1,656 @@
+<!--
+                <details>
+                  <summary>Mais Vendidos</summary>
+                  <div class="details-contents">
+                      
+                  </div>
+                </details>
+                
+                <details>
+                    <summary>Acessórios para Pets</summary>
+                    <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Amazon Family</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Amazon Prime</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Beleza</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Casa e Jardim</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Cozinha</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Cuidados Pessoais</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Dispositivos Amazon</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Dispositivos Amazon</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Eletrônicos e Informática</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Livros</summary>
+                  <div class="details-contents"></div>
+                </details>
+
+                <details>
+                  <summary>Presentes Amazon</summary>
+                  <div class="details-contents"></div>
+                </details>-->
+
+
+media query
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima — telas muito grandes, TVs
+
+light mode
+sun
+<i class="uil uil-brightness"></i>
+<i class="uil uil-brightness"></i>
+<i class="uil uil-sun"></i>
+
+dark mode
+<i class="uil uil-brightness"></i>
+
+:root{
+        --background-color: #fff;
+        --color-text: #B40404;
+        --color-logo: #585858;
+        --color-menu-icon: #585858;
+        --color-a: #585858;
+        --color-a-hover: #B40404;
+        --color-ion-icon: #B40404;
+      -------------------------------
+        --color-btn-login: #585858;
+        --color-btn-login-hover: #B40404;
+        --color-btn-cad: #585858;
+        --color-btn-cad-hover: #B40404;
+      -----------------------------------
+        --darkbackground-color: #2A2929;
+        --darkcolor-text: #B40404;
+        --darkcolor-logo: #585858;
+        --darkcolor-menu-icon: #585858;
+        --darkcolor-a: #585858;
+        --darkcolor-a-hover: #B40404;
+        --darkcolor-ion-icon: #B40404;
+
+<!-- Magazine Luiza 
+          <div class="container text-center">
+            <div class="row align-items-start">
+              
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+               
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;">
+                    <hr>
+                    <h3 class="card-title">Descrição</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="Links.php" class="btn btn-info">Loja Magazine Luiza</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <p class="link-mais">Para ver mais,<a href="Loja Magazine.php" class="btn-mais"> clique aqui</a></p>
+
+
+
+          
+
+          ::-webkit-scrollbar{
+            width: 10px;
+          }
+
+          ::-webkit-scrollbar-thumb{
+            background: var(--text-color);
+            
+          }
+
+
+
+
+        <div class="menu-lista">
+        <select name="categorias" class="select">
+        <option label="selecione">Selecione uma categoria ...</option>
+        <option value="ac-pets">Acessórios para Pets<img src="images/chevron-r-2.png"></option>
+        <option value="am-fam">Amazon Family<img src="images/chevron-r-2.png"></option>
+        <option value="ac-prem">Amazon Prime<img src="images/chevron-r-2.png"></option>
+        <option value="beleza">Beleza<img src="images/chevron-r-2.png"></option>
+        <option value="cs-jar">Casa e Jardim<img src="images/chevron-r-2.png"></option>
+        <option value="cozinha">Cozinha<img src="images/chevron-r-2.png"></option>
+        <option value="c-pes">Cuidados Pessoais<img src="images/chevron-r-2.png"></option>
+        <option value="dis-am">Dispositivos Amazon<img src="images/chevron-r-2.png"></option>
+        <option value="el-info">Eletrônicos e Informática<img src="images/chevron-r-2.png"></option>
+        <option value="livros">Livros<img src="images/chevron-r-2.png"></option>
+        <option value="pres-am">Presentes Amazon<img src="images/chevron-r-2.png"></option>
+        <option value="dest">Em Destaque<img src="images/chevron-r-2.png"></option>
+        <option value="m-ven">Mais Vendidos<img src="images/chevron-r-2.png"></option>
+        </select>
+        </div>
+
+
+
+            <div class="acordeons">
+            <details>
+              <summary>Lista 1</summary>
+              <div class="details-content">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Aparador_de_barbas.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Aparador de Barbas (Pelos)</h4>
+                        <span class="setor">Cuidados Pessoais</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Amolador_de_Facas.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Amolador Afiador De Facas</h4>
+                        <span class="setor">Utensílios Domésticos</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Controle_netflix.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Controle Remoto Lite Fire TV</h4>
+                        <span class="setor">Dispositivos Amazon</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- -->
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Echo_Dot.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Echo Dot (4ª Geração)</h4>
+                        <span class="setor">Dispositivos Amazon</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Espatula_para_bolo.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Espatula Para Bolo Inox Confeiteiro</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Faqueiro-preview.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Faqueiro Inox Malibu</h4>
+                        <span class="setor">Utensílios Domésticos</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="link-mais">Para ver mais,<a href="Loja Amazon.php" class="btn-mais">clique aqui</a></p>
+            </details>
+            <hr>
+            <details>
+              <summary>Lista 2</summary>
+              <div class="details-content">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Forma_cupcake.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Cupcake e Muffin Formas Avulsas Silicone</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Forma_para_bolo.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Forma Retangular em Silicone</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Forma_para_Moldar_Hamburguer.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Forma para Moldar Hambúrguer</h4>
+                        <span class="setor">Utensílios de Cozinha</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="details-content">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Forma_cupcake.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Cupcake e Muffin Formas Avulsas Silicone</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Forma_para_bolo.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Forma Retangular em Silicone</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Forma_para_Moldar_Hamburguer.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Forma para Moldar Hambúrguer</h4>
+                        <span class="setor">Utensílios de Cozinha</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="link-mais">Para ver mais,<a href="Loja Amazon.php" class="btn-mais">clique aqui</a></p>
+            </details>
+            <hr>
+            <details>
+              <summary>Lista 3</summary>
+              <div class="details-content">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/grade_de_resfriamento.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Grade de Resfriamento de Aço</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Jogo_de_formas_muffins.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Jogo de Formas para Muffins Redondo</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Kit_Potes_de_Plástico.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Kit Com Potes Marmitex</h4>
+                        <span class="setor">Utensílios de Cozinha</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/grade_de_resfriamento.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Grade de Resfriamento de Aço</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Jogo_de_formas_muffins.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Jogo de Formas para Muffins Redondo</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Kit_Potes_de_Plástico.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Kit Com Potes Marmitex</h4>
+                        <span class="setor">Utensílios de Cozinha</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="link-mais">Para ver mais,<a href="Loja Amazon.php" class="btn-mais">clique aqui</a></p>
+            </details>
+            <hr>
+            <details>
+              <summary>Lista 4</summary>
+              <div class="details-content">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/grade_de_resfriamento.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Grade de Resfriamento de Aço</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Jogo_de_formas_muffins.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Jogo de Formas para Muffins Redondo</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Kit_Potes_de_Plástico.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Kit Com Potes Marmitex</h4>
+                        <span class="setor">Utensílios de Cozinha</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/grade_de_resfriamento.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Grade de Resfriamento de Aço</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Jogo_de_formas_muffins.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Jogo de Formas para Muffins Redondo</h4>
+                        <span class="setor">Utensílios e Acessórios de Assar</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-informations">
+                        <div class="img">
+                        <img src="images/produtos/Kit_Potes_de_Plástico.png" style="width:100px;"></div>
+                        <hr style="width:250px; margin-left: 50px;">
+                        <h2 class="title-card">Descrição:</h2>
+                        <h4 class="description">Kit Com Potes Marmitex</h4>
+                        <span class="setor">Utensílios de Cozinha</span>
+                        <div class="btnx">
+                        <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="link-mais">Para ver mais,<a href="Loja Amazon.php" class="btn-mais">clique aqui</a></p>
+            </details>
+          </div>
+
+
+          class="dropdown__link"
+        

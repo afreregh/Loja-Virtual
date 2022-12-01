@@ -1,0 +1,56 @@
+     
+      .card-image{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        padding: 5px;
+        margin-left: 40px;
+      }
+
+      .card-image .card-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background: #fff;
+        border-radius: 50%;
+        border: 4px solid #BEBDC2;
+      }
+
+      .card{
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 320px;
+        border: 1px solid #E0DEE8;
+      }
+
+      .name{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--darkOne);
+        padding-top: 20px;
+      }
+
+      .description{
+        font-size: 14px;
+        color: var(--darkOne);
+        text-align: center;
+      }
+
+      <div class="card">
+      <div class="image-content">
+      <span class="overlay-two"></span>
+
+      <div class="card-image">
+      <img src="images/produtos/Amolador_de_Facas.png" class="card-img">
+      </div>
+
+      <div class="card-content">
+      <h2 class="name">Descrição:</h2>
+      <p class="description">Aparador de Barbas (Pelos)</p>
+
+      <a href="Loja Amazon.php" class="btn-a">Loja Amazon</a>
+      </div>
+      </div>
+      </div>

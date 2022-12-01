@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    ob_start(); // Serve para limpar buff de saídas para evitar erros de redirecionamentos
+    include_once 'conexao.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +17,8 @@
     <link rel="stylesheet" href="https://path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Login</title>
     <!-- Style -->
     <style>
       .light {
@@ -56,8 +63,6 @@
         width: 100%;
         margin-left: -20px;
       }
-
-      
 
       .wrapper{
         position: relative;
@@ -197,13 +202,22 @@
 
       .content-area .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
+        
       }
 
-      .title{
-        font-size: 1.4rem;
+      .title h1{
+        font-size: 22px;
+        color: var(--darkOne);
+        text-transform: capitalize;
+        line-height: 1.4;
+        margin-top: 50px;
+      }
+
+      .title h2{
+        font-size: 22px;
         color: var(--darkOne);
         text-transform: capitalize;
         line-height: 1.4;
@@ -217,11 +231,64 @@
         line-height: 2.3;
       }
 
-      .clothes{
-        width: 123%;
-        transform: translate(15%, 25px);
+      .label{
+        color: var(--lightTwo);
+        margin-left: .1rem;
+        display: inline-block;
+        transition: 0.3s;
       }
 
+      .label:hover{
+        color: var(--hoverColor);
+        transform: scale(1.05)
+      }
+
+      .inputs{
+        border: 1px solid var(--mainColor);
+        border-radius: 7px;
+        width: 250px;
+        height: 30px;
+      }
+
+      #senha{margin-top: 10px;}
+
+      input::placeholder{
+        color: var(--lightOne);
+        font-size: 1rem;
+        margin: 1.9rem 0 2.5rem;
+        max-width: 600px;
+        line-height: 2.3;
+        padding-left: 10px;
+      }
+
+      /* Textarea */
+
+      .textarea{
+        border: 1px solid var(--mainColor);
+        border-radius: 7px;
+        margin-left: .1rem;
+        display: inline-block;
+        transition: 0.3s;
+      }
+
+      .submit{
+        display: inline-block;
+        padding: 0.9rem 1.9rem;
+        background-color: var(--mainColor);
+        border-radius: 50px;
+        text-transform: capitalize;
+        transition: 0.3s;
+        color: #fff !important;
+        border-bottom-left-radius: 0px;
+        border: none;
+        margin-top: 10px;
+      }
+
+      .submit:hover{
+        background-color: var(--hoverColor);
+        transform: scale(1) !important;
+      }
+      
       .shape{
         position: absolute;
         z-index: 0;
@@ -341,16 +408,27 @@
           background: none;
         }
         .content-area .container {
-          grid-template-columns: 1fr;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          align-items: center;
           justify-content: center;
-          grid-gap: 2rem;
         }
+
         .title {
           font-size: 1.1rem;
         }
         .text{
           font-size: 0.95rem;
           margin: 1.4rem 0 1.5rem;
+        }
+        .subtitle{
+          font-size: 25px;
+          color: var(--darkOne);
+          text-transform: capitalize;
+          line-height: 1.4;
+          margin-left: 2px;
+          border-bottom: 1px solid var(--darkOne);
+          padding-bottom: 4px;
         }
         .clothes {
           width: 100%;
@@ -389,6 +467,15 @@
         .text{
           margin: 1.1rem 0 1.5rem;
         }
+        .subtitle{
+          font-size: 25px;
+          color: var(--darkOne);
+          text-transform: capitalize;
+          line-height: 1.4;
+          margin-left: 2px;
+          border-bottom: 1px solid var(--darkOne);
+          padding-bottom: 4px;
+        }
         .shape{
           display: none;
         }
@@ -403,9 +490,25 @@
       }
 
     </style>
+
   </head>
   <body>
+    <?php
+        //Criptografar senha
+        //echo password_hash(12345, PASSWORD_DEFAULT);
+    ?>
+    
+    <?php
+        if(isset($_SESSION['msg'])){ // Verifica se existe a variavel global (result_usuario)
+            echo $_SESSION['msg']; // Imprime o valor que há na variavel global
+            unset($_SESSION['msg']); //destroi a msg que foi imprimida na página
+        }
 
+        if(isset($_SESSION['msgcad'])){ // Verifica se existe a variavel global (result_usuario)
+            echo $_SESSION['msgcad']; // Imprime o valor que há na variavel global
+            unset($_SESSION['msgcad']); //destroi a msg que foi imprimida na página
+        }
+    ?>
     <!-- Header -->
     <main>
       <div class="wrapper light">
@@ -423,12 +526,8 @@
 
             <div class="links">
               <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="Vitrine.php">Vitrine</a></li>
-                <li><a href="Sobre.php">Sobre</a></li>
-                <li><a href="Contatos.php">Contatos</a></li>
-                <li><a href="faq.php">FAQ</a></li>
                 <li><a href="login.php" class="btn">Entrar</a></li>
+                <li><a href="Cadastrar.php" class="btn">Cadastrar</a></li>
               </ul>
             </div>
 
@@ -443,23 +542,25 @@
 
         <div class="content-area">
           <div class="container">
-            <div class="left">
+            <div>
               <div class="title">
-                <h1>Bem-vindo à</h1>
-                <h1>Loja Virtual</h1>
+                <h1>Bem - vindo à</h1>
+                <h2>Página de Login</h2>
               </div>
               <p class="text">
-                Clique no link para conhecer os produtos e preços da loja. Também poderá procurar o produto em nossa <a href="Pesquisar Produtos.php">Página de busca.</a>
+                Faça o ligin no campo abaixo. Caso ainda não possua uma conta, clique no botão acima.
               </p>
-              <div>
-                <a href="Loja.php" class="btn">saiba mais!</a>
-              </div>
-            </div>
-
-            <div class="right">
-              <img src="images/clothes.png" alt="Sacola de compras" class="clothes">
-            </div>
-
+              <div class="text"><p>* Solicitamos aos usuários que ao cadastrar-se na plataforma, anote seus dados em um documento seguro, <br>afim de realizar o login. Assim será mais fácil acessar seu Painel Administrativo. Obrigado!</p></div>
+              <form method="post" action="validar.php">
+                <label  class="label">Usuario:</label>
+                <input type="text" name="usuario" placeholder="Digite seu Nome Completo" class="inputs">
+                <br><br>
+                <label class="label">Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua senha" class="inputs" id="senha">
+                <br>
+                <input type="submit" name="SendLogin" value="Entrar" class="submit">
+              </form>
+            </div>  
           </div>
         </div>
 
@@ -470,11 +571,12 @@
       </div>
     </main>
      
+    
     <!-- Script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
+    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
     <script>
@@ -529,6 +631,50 @@
       }
 
       events();
+
+    </script>
+
+    <script>
+      const wrapper_select = document.querySelector(".wrapper-select"),
+            selectBtn = wrapper_select.querySelector(".select-btn"),
+            searchInp = wrapper_select.querySelector("input"),
+            options = wrapper_select.querySelector(".options");
+      // ARRAY OF SOME LISTA ASSUNTO 
+      let lista_assuntos = ["dúvidas", "reclamações", "sugestões", "FAQ"];
+
+      function addLista(selectedLista) {
+        options.innerHTML = "";
+        lista_assuntos.forEach(lista => {
+          //if selected lista and lista value is same then add selected class
+          let isSelected = lista == selectedLista ? "selected" : "";
+          // adding each lista inside li and inserting all li inside options tag
+          let li = `<li onclick="updateName(this)" class="${isSelected}">${lista}</li>`;
+          options.insertAdjacentHTML("beforeend", li);
+        }); 
+      }
+      addLista();
+
+      function updateName(selectedLi){
+        searchInp.value = "";
+        addLista();
+        wrapper_select.classList.remove("active");
+        selectBtn.firstElementChild.innerText = selectedLi.innerText;
+      }
+
+      searchInp.addEventListener("keyup", () =>{
+        let arr = []; // creating empty array
+        let searchedVal = searchInp.value.toLowerCase();
+        // returning all listas from array which are start with user searched value
+        // and mapping returned listas with li and joining them
+        arr = lista_assuntos.filter(data => {
+          return data.toLowerCase().startsWith(searchedVal);
+        }).map(data => `<li onclick="updateName(this)">${data}</li>`).join("");
+        options.innerHTML = arr ? arr : `<p>Oops! Lista não encontrada!</p>`;
+      });
+
+      selectBtn.addEventListener("click", () =>{
+        wrapper_select.classList.toggle("active");
+      });
 
     </script>
     <!-- Footer -->

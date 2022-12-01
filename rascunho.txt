@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <title>Home</title>
+    <style>
+      /* Login e cadastro */
+      .btn-log-in{
+    
+        border: none;
+        background: #ddd;
+        padding: 15px;
+        margin-left: 100px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: gray;
+      }
+
+      .btn-cad{
+          border: none;
+          padding: 15px;
+          background: #ddd;
+          margin-left: 40px;
+          margin-right: 10px;
+          text-decoration: none;
+          color: gray;
+      }
+
+      .btn-log-in:hover{
+        text-decoration: underline;
+        color: darkgray;
+      }
+
+      .btn-cad:hover{
+          text-decoration: underline;
+          color: darkgray;
+      }
+    </style>
+</head>
+    <body>
+        <header class="header">
+            <div class="item1">Loja Virtual</div>
+            <div class="item2"><input type="search" class="search" placeholder="Buscar ..."></div>
+            <div class="item3"><button><a href="Pesquisar.html"><i class='bx bx-search-alt icon'></i></a></button></div>
+            <a href="" class="btn-log-in">Login</a>
+            <a href="" class="btn-cad">Cadastro</a>
+        </header>
+        <br>
+        <!-- Main -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/produtos/1.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="images/produtos/2.png" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="content">
+          <h4>Conteúdo da Loja</h4>
+        </div>
+
+        <button class="btn-loja1"><a href="Amazon.html" class="link">Loja Amazon</a></button>
+        <button class="btn-loja2"><a href="Amazon.html" class="link">Loja Shopee</a></button>
+        <button class="btn-loja3"><a href="Magazine Luiza.html" class="link">Loja Magazine Luiza</a></button>
+
+        <h4>Produtos em Destaque</h4>
+        <!-- Galeria de Produtos -->
+        <div class="galeria-produtos">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Aparador_de_barbas.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Controle_netflix.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Echo_Dot.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/kindle.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Kit_Potes_de_Plástico_Hermético_10_unidades__Electrolux.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Espatula_para_bolo.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Faqueiro-preview.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Amolador_de_Facas.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/produtos/Forma_cupcake.png" class="img">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main -->
+        <!-- Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" 
+        crossorigin="anonymous"></script>
+
+        <footer>
+          <p class="footer"><i class='bx bx-copyright'></i>Copyright - Plataforma criada pela Network Online Developer - 2022.</p>
+        </footer>
+    </body>
+</html>
+
+/* Login e cadastro */
+      .btn-log-in{
+    
+        border: none;
+        background: #ddd;
+        padding: 15px;
+        margin-left: 100px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: gray;
+      }
+
+      .btn-cad{
+          border: none;
+          padding: 15px;
+          background: #ddd;
+          margin-left: 40px;
+          margin-right: 10px;
+          text-decoration: none;
+          color: gray;
+      }
+
+      .btn-log-in:hover{
+        text-decoration: underline;
+        color: darkgray;
+      }
+
+      .btn-cad:hover{
+          text-decoration: underline;
+          color: darkgray;
+      }
+
+.header{
+    display: flex;
+    background-color: #ddd;
+    height: 63px;
+    box-shadow: 3px 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.header .item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 18px;
+}
+
+.header .item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.item2 .search{
+    width: 600px;
+    height: 40px;
+    background: #ddd;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.header .item3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+    
+}
+.item3 button{
+    background: #ddd;
+    width: 50px;
+    border: 1px solid gray;
+    height: 24px;
+    margin-left: 40px;
+}
+
+.item3 .icon{
+    color: gray;
+    font-size: 15px;
+    margin-left: 18px;
+}
+
+.icon{
+    margin-right: 500px;
+}
+
+input::placeholder{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 16px;
+}
+
+/* carousel */
+#carouselExampleControls{
+    width: 100%;
+}
+.w-100{
+    width: 100%;
+    height: 500px;
+}
+.carousel-control-prev-icon{
+    color: #000;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+h4{
+    display: flex;
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 300px;
+}
+
+h4::after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+h4::before{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.btn-loja1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    border: none;
+}
+
+.btn-loja2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+}
+
+.btn-loja3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 100px;
+    border: none;
+}
+
+.link{
+    text-decoration: none;
+    color: gray;
+}
+
+/* Cards */
+.hr{
+    
+    width: 500px;
+    margin-left: 500px;
+    margin-right: 20px;
+}
+.galeria-produtos{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.card{
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px;
+    margin-top: 20px;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: gray;
+    background-color: #ddd;
+    color: gray;
+    height: 60px;
+}
